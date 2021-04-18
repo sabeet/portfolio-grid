@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #444444;
+    color: white;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.4fr 2.2fr 0.4fr;
+    grid-template-rows: 0.6fr 1.8fr 0.6fr;
+    gap: 10px 10px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+      "Home Header About"
+      "Margin-left Center Margin-right"
+      "Contact Footer Portfolio";
+    place-items: center;
+  }
+  
+  .Center { grid-area: Center;
+            
+}
+  
+  .Header { grid-area: Header; }
+  
+  .Home { grid-area: Home; 
+        transform: rotate(-45deg);
+}
+  
+  .About { grid-area: About;
+            transform: rotate(45deg);
+}
+  
+  .Contact { grid-area: Contact;
+            transform: rotate(45deg);
+}
+  
+  .Portfolio { grid-area: Portfolio;
+            transform: rotate(-45deg);
+}
+  
+  .Footer { grid-area: Footer; }
+  
+  .Margin-left { grid-area: Margin-left; }
+  
+  .Margin-right { grid-area: Margin-right; }
+
+  .aboutFont{
+    font-size: 1rem;
+  }
+
+  #thumbnail{
+    margin: 6px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    max-width: 95%;
+    filter: grayscale(100%) brightness(1.28) ;
+    
+  }
+  
+  #contact-name-text{
+    display: grid;
+    place-items: center;
+    font-size: 75%;
+  }
+
+  .contact-text{
+    font-size: 75%;
+  }
+
+  .paragraph-sizing{
+    font-size: 72%;
+  }
+
+  .portfolio-sizing{
+    font-size: 75%;
+  }
+
+  .portfolio-extra{
+    font-size: 75%;
+  }
+
+  

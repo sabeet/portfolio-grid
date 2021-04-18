@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sabeet Web Dev</title>
+</head>
+  <body>
+
+    <div class="grid-container">
+
+      <div id="content-center" class="Center">
+          Hey, welcome to my website. Have fun going through it. 
+      </div>
+      <!-- -->
+      <div class="Header">
+          
+      </div>
+      <!-- -->
+      <div onclick="contentSwapForHome()" class="Home">
+          Home
+      </div>
+      <!-- -->
+      <div onclick="contentSwapForAbout()" class="About">
+          About
+      </div>
+      <!-- -->
+      <div onclick="contentSwapForContact()" class="Contact">
+          Contact
+      </div>
+      <!-- -->
+      <div onclick="contentSwapForPortfolio()" class="Portfolio">
+          Portfolio
+      </div>
+      <!-- -->
+      <div class="Footer">
+          
+      </div>
+      <!-- -->
+      <div class="Margin-left">
+          
+      </div>
+      <!-- -->
+      <div class="Margin-right">
+          
+      </div>
+    </div>
+
+    <script>
+        function contentSwapForHome(){
+            document.getElementById('content-center').innerText = "Hey, welcome to my website. Have fun going through it. ";
+        }
+
+        function contentSwapForAbout(){
+            document.getElementById('content-center').innerHTML = "<span class= 'aboutFont'> <p class = 'paragraph-sizing'> &emsp;  My name is Sabeet Chowdhury and I'm a Software Developer."
+                                                                + " I graduated from Queens College CUNY in Decemeber 2020."
+                                                                + " Web development, especially with HTML, CSS, and Vanilla Javascript is what I consider to be my specialty"
+                                                                + " but i'm also fluent in Java and C++. </p>"
+                                                                + " <br /><p class = 'paragraph-sizing' > &emsp; The drive for coding started when I was 12 years old and played with HTML but my I really started to get into programming in 2018 when I started to learn Object Oriented Programming."
+                                                                + " I've attended 4 hackathons and have had 2 internships so far. </p>"
+                                                                + " <br /><p class = 'paragraph-sizing' > &emsp; I'm born, raised and based in Queens, NY A.K.A the most culturally diverse place in probably the whole world and honestly, the greatest place ever."
+                                                                + " If you want to get to know me more, here's a <a href='SabeetResumeMarch2021.pdf'>link</a> to my resumé or you could just contact me."
+                                                                + " Thanks for stopping by. </p></span>"
+            ;
+        }
+
+        function contentSwapForContact(){
+            document.getElementById('content-center').innerHTML = "<br /> <img id ='thumbnail' src='thumbnailForPortfolio.png'>"
+                                                                + "<br /> <span id='contact-name-text'> Sabeet A. Chowdhury </span>"
+                                                                + "<br />"
+                                                                + "<br />"
+                                                                + "<span class='contact-text'><u>LinkedIn :</u>  linkedin.com/in/sabeet/"
+                                                                + "<br />  <u>Email :</u> sabeet.a.chow90s@gmail.com</span>"
+            ;
+        }
+
+        function contentSwapForPortfolio(){
+            document.getElementById('content-center').innerHTML = "<span class='portfolio-extra'>These are some projects and collaborations I've done. More to come as time goes on...</span>"
+                                                                + "<br /><a href =''></a>"
+                                                                + "<br />"
+                                                                + "<br />"
+                                                                + "<br /><ul class = 'portfolio-sizing'><li><span class='link-text'><a href='http://sabeet.me/hit.html'>Hit Me || Matter.JS</a></li></span>"
+                                                                + "<br /><li><span class='link-text'><a href='http://qcprofstat.tk/'>Queens College Professor Statistics || A fullstack application with Javascript, Node, Express, and Chart.JS on an AWS EC2 instance</a></li></span>"
+                                                                + "<br /><li><span class='link-text'><a href='https://devpost.com/software/enveenyc-honfmv'>enveeNYC</a></li></span>"
+                                                                + "<br /><li><span class='link-text'><a href='https://github.com/sabeet/UnityGameTrees'>Will of The Woods || An endless runner in Unity</a></li></span>"
+                                                                + "<br /><li><span class='link-text'><a href='https://github.com/sabeet/jdbc-JTable-Vector'>Java/MS-SQL integration with Vectors</a></li></span>"
+                                                                + "<br /><li>and much more on my <span class='link-text'><a href='https://github.com/sabeet'>Github</a></li></ul></span>"
+            ;
+        }
+    </script>
+
+  </body>
+</html>
